@@ -40,13 +40,13 @@ const PokemonDetails = (props) => (
                             <p><span className="characteristics-wrap">Max HP</span> <span className="characteristics-values">{pokemon.maxHP}</span></p>
                         </div>
 
-                        <div className="allAttacs">
-                            <div className="fastAtacs">
-                                <h3>Fast Attacs</h3>
-                                <ul className="attacs-list">
+                        <div className="allAttacks">
+                            <div className="fastAttacks">
+                                <h3>Fast Attacks</h3>
+                                <ul className="attacks-list">
                                     {pokemon.attacks.fast.map((item,i) => {
                                         return (
-                                            <li key={`fastAtacs-${i}`}> 
+                                            <li key={`fastAttacks-${i}`}> 
                                                 <div>
                                                     {item.name}
                                                     <span className="caption">{item.damage}</span>
@@ -57,9 +57,9 @@ const PokemonDetails = (props) => (
                                     })}
                                 </ul>
                             </div>
-                            <div className="specialAttacs">
+                            <div className="specialAttacks">
                                 <h3>Special Attacks</h3>
-                                <ul className="attacs-list">
+                                <ul className="attacks-list">
                                     {pokemon.attacks.special.map((item,i) => {
                                         return (
                                             <li key={`attacks-${i}`}> 
@@ -93,101 +93,5 @@ const PokemonDetails = (props) => (
         }}
     </Query>
 )
-
-
-
-// class PokemonDetails extends React.Component {
-
-//     showDetalis = () => {
-//         const { id } = this.id;
-//         this.props.history.push(`/pokemon/id/${id}`);
-//         document.querySelector('.wrap-content').style.display= 'none';
-//     }
-//     render() {
-//         return (
-            // <div className="pokemon-details">
-            //     <div className="details-header">
-            //         <div className="pokemon-details-name-wrap">
-            //             <h2 className="pokemon-details-name">Bulbasaur</h2>
-            //             <p className="classification">speed pokemon</p>
-            //         </div>
-            //         <div className="feature">
-            //             <div className="resistant-wrap">
-            //                 <span className="resistant">Water</span>
-            //                 <span className="resistant">Electric</span>
-            //                 <span className="resistant">Grass</span>
-            //                 <span className="resistant">Fightin</span> 
-            //                 <span className="resistant">Fairy</span> 
-            //             </div>
-            //             <div className="weaknesses-wrap">
-            //                 <span className="weaknesses">Fire</span>
-            //                 <span className="weaknesses">Ice</span>
-            //                 <span className="weaknesses">Flyning</span>
-            //                 <span className="weaknesses">Psychick</span>  
-            //             </div>
-            //         </div>
-            //     </div>
-
-            //     <div className="pokemon-details-info">
-            //             <img className="pokemon-details-photo" src="../image/hero.jpg" alt="foto"/>
-            //         <div className="pokemon-details-allInfo">
-            //             <div className="physical-characteristics">
-            //                 <p><span className="characteristics-wrap">Weight</span> <span className="Weight-min characteristics-values">6.04kg </span>&ensp; - &ensp;<span className="Weight-max characteristics-values"> 7.76kg</span></p>
-            //                 <p><span className="characteristics-wrap">Height</span> <span className="Height-min characteristics-values" values>0.61m </span>&ensp; - &ensp;<span className="Height-max characteristics-values"> 0.69m</span></p>
-            //                 <p><span className="characteristics-wrap">Max HP</span> <span className="characteristics-values" values>1071</span></p>
-            //             </div>
-
-            //             <div className="allAttacs">
-            //                 <div className="fastAtacs">
-            //                     <h3>Fast Attacs</h3>
-            //                     <ul className="attacs-list">
-            //                         <li>
-            //                             <div>Power Whip <span className="caption">70</span></div>
-            //                             <p>Grass</p>    
-            //                         </li>
-            //                         <li>
-            //                             <div>Seed Bomb <span className="caption">40</span></div>
-            //                             <p>Grass</p> 
-            //                         </li>
-            //                         <li>
-            //                             <div>Sludge Bomb <span className="caption">55</span></div>
-            //                             <p>Grass</p> 
-            //                         </li>
-            //                     </ul>
-            //                 </div>
-            //                 <div className="specialAttacs">
-            //                     <h3>Special Attacs</h3>
-            //                     <ul className="attacs-list">
-            //                         <li>
-            //                             <div>Tackle <span className="caption">12</span></div>
-            //                             <p>Normal</p>    
-            //                         </li>
-            //                         <li>
-            //                             <div>Vine Whip <span className="caption">7</span></div>
-            //                             <p>Grass</p> 
-            //                         </li>
-            //                     </ul>
-            //                 </div>
-            //             </div>
-
-            //             <div className="evolution">
-            //                 <h3>Evolution</h3>
-            //                 <div className="evolution-img-wrap">
-            //                     <div className="pokemon-info" onClick={this.showDetalis}>
-            //                         <img className="pokemon-photo" src="../image/hero2.jpg" alt="hero2"/>
-            //                         <p className="pokemon-name">Bulbasavr</p>
-            //                     </div>
-            //                     <div className="pokemon-info">
-            //                         <img className="pokemon-photo" src="../image/hero3.jpg" alt="hero3" />  
-            //                         <p className="pokemon-name">Bulbasavr</p>
-            //                     </div>
-            //                 </div>
-            //             </div>
-            //         </div>
-            //     </div>         
-            // </div>
-//         )
-//     }
-// }
 
 export default withRouter(PokemonDetails);

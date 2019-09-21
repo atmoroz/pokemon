@@ -12,18 +12,16 @@
 .details-header,
 .pokemon-details-info,
 .physical-characteristics>p,
-.allAttacs,
+.allAttacks,
 .evolution-img-wrap {
     display: flex;
 }
 .details-header,
 .pokemon-details-info,
-.allAttacs,
+.allAttacks,
 .evolution-img-wrap {
     justify-content: space-between;
 }
-
-
 .details-header {
     color: #333;
     align-items: end;
@@ -35,7 +33,7 @@
     line-height: 70px;
 }
 .classification,
-.attacs-list>li>p {
+.attacks-list>li>p {
     font-size: 14px;
     line-height: 20px;
     color: rgba(0, 0, 0, 0.54);
@@ -64,7 +62,6 @@
 .resistant-wrap {
     margin-bottom: 34px;
 }
-
 .pokemon-details-photo {
     min-width: 230px;
     width: 480px;
@@ -74,14 +71,11 @@
 .pokemon-details-allInfo {
     width: 784px;
 }
-
-
 .physical-characteristics,
-.fastAtacs,
-.specialAttacs {
+.fastAttacks,
+.specialAttacks {
     box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2), 0px 3px 4px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.14);
 }
-
 .physical-characteristics {
     padding: 30px;
     margin-bottom: 36px;
@@ -103,13 +97,12 @@
     line-height: 16px;
     letter-spacing: 0.4px;
 }
-
-.allAttacs {
+.allAttacks {
     margin-bottom: 51px;
 }
 
-.fastAtacs,
-.specialAttacs {
+.fastAttacks,
+.specialAttacks {
     width: 375px;
     padding: 21px 24px;
     font-size: 16px;
@@ -123,19 +116,19 @@
     line-height: 16px;
     letter-spacing: 0.4px;
 }
-.attacs-list {
+.attacks-list {
     padding: 0 4px 0 24px;
 }
-.attacs-list>li {
+.attacks-list>li {
     border-bottom: 1px solid rgba(0, 0, 0, 0.12);
     padding: 12px 20px 15px 0;
 }
-.attacs-list>li>div {
+.attacks-list>li>div {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.attacs-list>li>p {
+.attacks-list>li>p {
     letter-spacing: 0.25px;
 }
 
