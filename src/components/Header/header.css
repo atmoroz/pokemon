@@ -1,0 +1,29 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 36px;
+}
+.clientInfo {
+    display: flex;
+    align-items: center;
+}
+.clientPhoto {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+.clientInfo_wrap {
+    font-size: 18px;
+    line-height: 21px;
+}
+.social {
+    font-size: 20px;
+}
+.linkedin {
+    margin-right: 25px;
+}
+.fa:hover {
+    transform: scale(1.2);
+}

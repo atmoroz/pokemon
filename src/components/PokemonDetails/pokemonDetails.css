@@ -1,0 +1,141 @@
+.pokemon-details {
+    
+    max-width: 1414px;
+    background: #fff;
+    box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.14), 0px 8px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    margin: -40px auto 0;
+    padding: 47px 36px 430px 71px;
+    color: rgba(0, 0, 0, 0.87);
+    box-sizing: border-box;
+}
+.details-header,
+.pokemon-details-info,
+.physical-characteristics>p,
+.allAttacs,
+.evolution-img-wrap {
+    display: flex;
+}
+.details-header,
+.pokemon-details-info,
+.allAttacs,
+.evolution-img-wrap {
+    justify-content: space-between;
+}
+
+
+.details-header {
+    color: #333;
+    align-items: end;
+    margin-bottom: 42px;
+}
+.pokemon-details-name {
+    font-size: 60px;
+    font-weight: 300;
+    line-height: 70px;
+}
+.classification,
+.attacs-list>li>p {
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.54);
+    text-transform: capitalize;
+}
+.feature {
+    text-align: right;
+}
+.resistant,
+.weaknesses {
+    text-align: center;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+    border-radius: 16px;
+    background: rgba(33, 150, 83, 0.4);
+    padding: 7px 23px;
+    margin-right: 9px;
+}
+.weaknesses {
+    background: linear-gradient(0deg, rgba(235, 87, 87, 0.4), rgba(235, 87, 87, 0.4)), rgba(235, 87, 87, 0.4);
+}
+.resistant:last-child,
+.weaknesses:last-child{
+    margin-right: 0;
+}
+.resistant-wrap {
+    margin-bottom: 34px;
+}
+
+.pokemon-details-photo {
+    min-width: 230px;
+    width: 480px;
+    height: 443px;
+    margin-right: 25px;
+}
+.pokemon-details-allInfo {
+    width: 784px;
+}
+
+
+.physical-characteristics,
+.fastAtacs,
+.specialAttacs {
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2), 0px 3px 4px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.14);
+}
+
+.physical-characteristics {
+    padding: 30px;
+    margin-bottom: 36px;
+}
+.physical-characteristics>p {
+    margin-bottom: 11px;
+    line-height: 19px;
+    letter-spacing: 0.15px;
+}
+.physical-characteristics>p:last-child {
+    margin-bottom: 0;
+}
+.characteristics-wrap {
+    display: block;
+    width: 81px;
+}
+.characteristics-values {
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+}
+
+.allAttacs {
+    margin-bottom: 51px;
+}
+
+.fastAtacs,
+.specialAttacs {
+    width: 375px;
+    padding: 21px 24px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    box-sizing: border-box;
+    height: fit-content;
+}
+.caption {
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+}
+.attacs-list {
+    padding: 0 4px 0 24px;
+}
+.attacs-list>li {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    padding: 12px 20px 15px 0;
+}
+.attacs-list>li>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.attacs-list>li>p {
+    letter-spacing: 0.25px;
+}
+
