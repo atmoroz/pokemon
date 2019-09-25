@@ -5,20 +5,33 @@ import './pokemon.css';
 
 class Pokemon extends React.Component {
 
+    handleScroll = ({ currentTarget }, loadMoreCallBack) => {
+        if (
+          currentTarget.scrollTop + currentTarget.clientHeight >=
+          currentTarget.scrollHeight
+        ) {
+            loadMoreCallBack();
+        }
+    };
 
-    showDetalis = () => {
-        const { id } = this.props;
+    showDetalis = (id) => {
         this.props.history.push(`/pokemon/id/${id}`);
         document.querySelector('.wrap-content').style.display= 'none';
     }
-
+    
     render() {
-        const { image, name } = this.props;
+        
+        const { loadMoreCallBack, pokemons } = this.props;
+       
         return (
-            <div className="pokemon" onClick={this.showDetalis}>
-                <img className="pokemon-photo" src={image} alt="foto"/>
-                <p className="pokemon-name">{name}</p>
-            </div>
+            pokemons.map((item) => (
+                <section className="section" key={item.id} onScroll={e => this.handleScroll(e, loadMoreCallBack)}>
+                    <div className="pokemon" id={item.id} key={item.id} onClick={this.showDetalis.bind(this, item.id)}>
+                        <img className="pokemon-photo" src={item.image} alt="foto"/>
+                        <p className="pokemon-name">{item.name}</p>
+                    </div>
+                </section>
+            ))
         )
     }
 }

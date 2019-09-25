@@ -1,8 +1,8 @@
 import gql from 'graphql-tag'; 
 
 export const fetchPokemons = gql`
-    query{
-        pokemons(first: 100) {
+    query pokemons($first: Int!){
+        pokemons(first: $first) {
             id
             image
             name
