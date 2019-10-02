@@ -23,14 +23,14 @@ class Pokemon extends React.Component {
         
         const { loadMoreCallBack, pokemons, id } = this.props;
         return (
-            <section className="main" key={id} onScroll={e => this.handleScroll(e, loadMoreCallBack)} >
+            <main className="main" key={id} onScroll={e => this.handleScroll(e, loadMoreCallBack)} >
                 {pokemons.map((item) => (
                     <div className="pokemon" id={item.id} key={item.id} onClick={this.showDetalis.bind(this, item.id)}>
                         <img className="pokemon-photo" src={item.image} alt="foto"/>
                         <p className="pokemon-name">{item.name}</p>
                     </div>
                 ))}
-            </section>
+            </main>
         )
     }
 };
